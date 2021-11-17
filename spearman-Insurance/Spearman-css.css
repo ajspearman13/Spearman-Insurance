@@ -1,0 +1,262 @@
+body{
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#header{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color:rgba(107,181,69);
+    text-align: center;
+ 
+}
+#entire-logo{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: -53px;
+    
+}
+#goosehead-logo{
+    border: 10px solid transparent;
+    border-radius: 50px;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: -15px;
+}
+#logo-words{
+    margin-top: -25px;
+}
+.side-header{
+    display: flex;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+.nav-box{
+    position:fixed;
+    top: 0;
+    left:0;
+    width:270px;
+    z-index: -1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    text-align: center; 
+    background-color: rgba(53,134,64);
+    padding-top: 50px;
+    transform: translate(-230px);
+}
+.show-nav .nav-box{
+ transform: translateX(0);
+ z-index: 1;
+ width:170px;
+ top:0;
+}
+.nav-div{
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.show-nav .nav-div:hover{
+font-size: 20px;
+background-color: rgba(78, 84, 107, 0.61)
+}
+#blur-page {
+    position: absolute;
+    top: 0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgba(95, 158, 160, 0.548);
+    backdrop-filter: blur(2px);
+    visibility:hidden;
+    z-index: 2;
+}
+.show-nav #blur-page{
+    visibility: visible;
+    margin-left: 170px;
+}
+#menu-button{
+    background-color: rgba(255, 228, 196, 0);
+    border: 0px transparent solid;
+    position: fixed;
+    top:10px;
+    left: 0;
+    width: 30px;
+}
+#menu-icon:hover{
+    width:35px;
+    margin-left: -5px;
+}
+h2{
+    text-align: center;
+}
+.label{
+    background-color: rgba(53,134,64);
+    border-radius: 13px;
+    padding: 19px; 
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+#pic-container{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    background-image:url(road-car.webp) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: 7s;
+
+    animation-name: animate;
+    animation-direction:reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes animate{
+    20%{
+        background-image: url(nice-home.jpg);
+        background-position: center;
+    }
+    40%{
+        background-image: url(family.jpg);
+        background-position: top;
+       
+    }
+    70%{
+        background-image: url(road-car.webp);
+    }
+    90%{
+        background-image: url(detroit.jpg);
+    }
+}
+#quote-button{
+    background-color: rgba(128, 128, 128, 0.404);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    width: 120px;
+    height: 40px;
+}
+#quote-button:hover{
+    font-size: 22px;
+    width: 150px;
+    height: 50px;
+}
+#about-us-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-areas:
+        "paragraph "
+        " dad "       
+        "mom";
+}
+@media (min-width: 600px) {
+    #about-us-box{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas:
+        "paragraph paragraph"
+        " dad mom"
+    }
+    #input-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pic-container{
+        height: 450px;
+    }
+
+}
+@media (max-width: 550px){
+    .side-header{
+        visibility: hidden
+    }
+}
+#intro-para{
+    text-align: center;
+    grid-area: paragraph;
+    background-color: rgba(109, 111, 113, 0.11);
+}
+#dad-profile{
+    grid-area: dad;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(109, 111, 113, 0.11);
+}
+#mom-profile{
+    grid-area: mom;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(109, 111, 113, 0.11);
+}
+.profile-photo{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid transparent;
+    border-radius: 30px;
+}
+#product-box{
+    background-color: rgb(201, 195, 140);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-pic{
+   width: 100px;
+   height: 100px;
+}
+#input-box{
+   padding-left: 5px;
+   
+}
+.input-field{
+    width: 350px;
+    margin-bottom: 15px;
+}
+#input-message{
+    height: 80px;
+}
+#submit-button{
+    margin-top: 15px;
+}
+#review-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 200px;
+    text-align: center;
+    background-color: rgba(109, 111, 113, 0.11);
+}
+.review-entry{
+    width: 300px;
+    padding-bottom: 15px;
+}
+.star{
+    padding-right: 4px; padding-left: 4px;
+}
