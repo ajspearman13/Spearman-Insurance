@@ -225,6 +225,10 @@ h2{
     #quote-button{
         width:170px;
     }
+    #intro-para{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
 @media (max-width: 550px){
     .side-header{
