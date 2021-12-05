@@ -132,8 +132,10 @@ h2{
         background-position: center;
     }
     40%{
-        background-image: url(family.jpg);
-        background-position: top;
+        background-image: url(fami-pic.jpeg);
+        background-position: center;
+        
+       
        
     }
     70%{
@@ -228,6 +230,9 @@ h2{
     #intro-para{
         padding-left: 35px;
         padding-right: 35px;
+    }
+    #contact-us-box{
+        margin-left: -53px ;
     }
 }
 @media (max-width: 550px){

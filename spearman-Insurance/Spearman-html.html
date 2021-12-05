@@ -43,12 +43,12 @@
                   <p>GET A QUOTE</p>
                 </a>
             </div>
-            <div class="nav-div" >
-                <p>Contact Us<br>
-                    <!-- (313)-771-5573<br>email</p>  -->
-            </div>
             <div class="nav-div" onclick="aboutUsScroll()" >
                 <p>About Us</p>
+            </div>
+            <div class="nav-div"  onclick="contactUsScroll()">
+                <p>Contact Us<br>
+                    <!-- (313)-771-5573<br>email</p>  -->
             </div>
             <div class="nav-div" onclick="reviewScroll()">
                 <p>Customer Reviews</p>
@@ -100,7 +100,20 @@
     </div>
     <h2 class="label">Contact Us</h2>
     <div id="input-box">
-        <p style="text-align: center; font-size: 20px;">Enter your information here</p>
+        <div id="contact-us-box">
+            <p style="font-size: 23px;"> 25245 Five Mile Road Suite 500 <br>Redford, MI 48239 </p>
+        
+            <p>    <div style="font-size: 20px;"> Call / Text Us: </div>
+                <div><a href="tel:3137715573"> (313)-771-5573  </a> </div>
+            </p> 
+
+             <p> <div style="font-size: 20px;">Email Us:</div> 
+                <div > <a href="mailto:spearman.insurance@gmail.com">spearman.insurance@gmail.com </a>  </div>
+
+             </p>
+        </div>
+
+        <p style="text-align: center; font-size: 20px; font-weight: bold;">Enter your information here</p>
         <form action="" method="post">
             <label for="input-firstname"> First Name:</label>
                 <br>
@@ -131,31 +144,31 @@
             <p class="review-text">Sharron</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha, was great! She is kind, patient and nice. She thoroughly explained my coverages and recommended ones she felt will benefit my need. This built trust!!!</p>
-            <p>- October 1, 2021</p>
+    
         </div>
         <div class="review-entry">
             <p class="review-text">Mary</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha took the time to answer my questions and help me find a plan that would fit me and explain the things I didn't understand</p>
-            <p>- October 1, 2021</p>
+            
         </div>
         <div class="review-entry">
             <p class="review-text">Erica</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>The price and she was very sincere and knowledgeable about my insurance plan</p>
-            <p>- October 1, 2021</p>
+            
         </div>
         <div class="review-entry">
             <p class="review-text">Toya</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha Spearman was very knowledgeable and helpful. Overall was a pleasant customer service experience.</p>
-            <p>- October 1, 2021</p>
+           
         </div>
         <div class="review-entry">
             <p class="review-text">Eric</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>The price and she was very sincere and knowledgeable about my insurance plan</p>
-            <p>- October 1, 2021</p>
+           
         </div>
 
 
@@ -188,6 +201,9 @@
         }
         function reviewScroll(){
             window.scrollTo(0,2350)
+        }
+        function contactUsScroll(){
+            window.scrollTo(0,1350)
         }
         
 
