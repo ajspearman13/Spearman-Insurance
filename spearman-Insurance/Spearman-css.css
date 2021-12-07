@@ -294,19 +294,42 @@ h2{
     margin-top: 15px;
 }
 #review-box{
-    display: flex;
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 200px;
-    text-align: center;
+    
+    overflow: auto;
+    max-height: 275px;
     background-color: rgba(109, 111, 113, 0.11);
 }
 .review-entry{
+   
+    text-align: center;
     width: 300px;
-    padding-bottom: 15px;
-    padding-right: 7px;
-    padding-left: 7px;
+    height: 275px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+#next-review{
+   display: flex;
+   justify-content: center;
+   
+}
+#last-review{ 
+    display: flex;
+    justify-content: center;
+}
+.review-label{
+    display: flex;
+    flex-direction: column;
+    
+}
+.scroll-icon{
+   width: 55px;
+   height: 10px;
+   background-color: transparent;
 }
 .star{
     padding-right: 4px; padding-left: 4px;

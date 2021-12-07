@@ -138,39 +138,59 @@
         </form>
     </div>
     <h2 class="label">Reviews</h2>
+    <div id="last-review">
+        <button  style="padding: none; border: none; background: none;" onclick="lastReviewScroll()"> 
+            <img src="dwn-arrow.png" style=" transform: rotate(180deg)" alt="down"class="scroll-icon">
+        </button>
+    </div>
     <div id="review-box">
+        
         <div class="review-entry">
             <p class="review-text">Sharron</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha, was great! She is kind, patient and nice. She thoroughly explained my coverages and recommended ones she felt will benefit my need. This built trust!!!</p>
-    
+            <div class="review-label">
+                <p>Review 1 of 5</p>
+            </div>
         </div>
         <div class="review-entry">
             <p class="review-text">Mary</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha took the time to answer my questions and help me find a plan that would fit me and explain the things I didn't understand</p>
+            <div class="review-label">
+                <p>Review 2 of 5</p>
+            </div>
             
         </div>
         <div class="review-entry">
             <p class="review-text">Erica</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>The price and she was very sincere and knowledgeable about my insurance plan</p>
-            
+            <div class="review-label">
+                <p>Review 3 of 5</p>
+            </div>
         </div>
         <div class="review-entry">
             <p class="review-text">Toya</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>Tosha Spearman was very knowledgeable and helpful. Overall was a pleasant customer service experience.</p>
-           
+            <div class="review-label">
+                <p>Review 4 of 5</p>
+            </div>
         </div>
         <div class="review-entry">
             <p class="review-text">Eric</p>
             <img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star"><img src="stars.svg" class="star">
             <p>The price and she was very sincere and knowledgeable about my insurance plan</p>
-           
+            <div class="review-label">
+                <p>Review 5 of 5</p>
+            </div>
         </div>
-
-
+    </div>
+    <div id="next-review" >
+        <button style="padding: none;border: none; background: none;" onclick="nextReviewScroll()"> 
+            <img src="dwn-arrow.png" alt="down"class="scroll-icon" >
+        </button>
     </div>
    <hr>
 <footer>
@@ -204,6 +224,16 @@
         function contactUsScroll(){
             window.scrollTo(0,1350)
         }
+        function nextReviewScroll(){
+            const box = document.getElementById("review-box")
+           box.scrollTop += 275
+           box.style.scrollBehavior = "smooth"
+        }
+        function lastReviewScroll(){
+            const box = document.getElementById("review-box")
+           box.style.scrollBehavior = "smooth"
+           box.scrollTop += -275
+        }
         
 
         const firstname = document.getElementById("input-firstname")
@@ -212,7 +242,6 @@
         const email = document.getElementById("input-email")
         const message = document.getElementById("input-message")
         const br = document.createElement("br")
-
         const submit = document.getElementById("submit-button")
         
 
