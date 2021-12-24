@@ -1,5 +1,5 @@
 body{
-    margin-left: 40px;
+    margin-left: 60px;
     font-family: 'Times New Roman', Times, serif;
 }
 #header{
@@ -37,6 +37,9 @@ body{
     font-weight: bold;
     font-size: 18px;
 }
+#contact-us:hover{
+    transform: (1.2);
+}
 .nav-box{
     position:fixed;
     top: 0;
@@ -50,7 +53,7 @@ body{
     text-align: center; 
     background-color: rgba(53,134,64);
     padding-top: 50px;
-    transform: translate(-230px);
+    transform: translate(-210px);
 }
 .show-nav .nav-box{
  transform: translateX(0);
@@ -88,11 +91,21 @@ background-color: rgba(78, 84, 107, 0.61)
     position: fixed;
     top:10px;
     left: 0;
-    width: 30px;
+    margin-left: 5px; 
 }
 #menu-icon:hover{
-    width:35px;
-    margin-left: -5px;
+    transform: scale(1.2);
+}
+#scroll-top{
+    position: fixed;
+    left: 5px;
+    bottom: 27px;
+    background-color: rgba(255, 228, 196, 0);
+    border: 0px transparent solid;
+    z-index: 2;
+}
+#scroll-top:hover{
+    transform: scale(1.2);
 }
 h2{
     text-align: center;
@@ -133,7 +146,7 @@ h2{
     }
     40%{
         background-image: url(fami-pic.jpeg);
-        background-position: center;
+        background-position: top;
         
        
        
@@ -250,6 +263,7 @@ h2{
 
 }
 #intro-para{
+    display: block;
     text-align: center;
     grid-area: paragraph;
     background-color: rgba(109, 111, 113, 0.11);
