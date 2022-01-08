@@ -1,6 +1,7 @@
 body{
     margin-left: 60px;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 #header{
     display:flex;
@@ -53,7 +54,7 @@ body{
     text-align: center; 
     background-color: rgba(53,134,64);
     padding-top: 50px;
-    transform: translate(-210px);
+    transform: translate(-220px);
 }
 .show-nav .nav-box{
  transform: translateX(0);
@@ -90,8 +91,8 @@ background-color: rgba(78, 84, 107, 0.61)
     border: 0px transparent solid;
     position: fixed;
     top:10px;
-    left: 0;
-    margin-left: 5px; 
+    left: 3px;
+   
 }
 #menu-icon:hover{
     transform: scale(1.2);
@@ -147,9 +148,7 @@ h2{
     40%{
         background-image: url(fami-pic.jpeg);
         background-position: top;
-        
-       
-       
+
     }
     70%{
         background-image: url(road-car.webp);
@@ -164,8 +163,7 @@ h2{
    left: 37px;
    right: 42px;
     display: flex;
-    width: 90%;
-    background-color: rgba(216, 191, 216, 0.062);
+    width: 90%; 
     justify-content:space-around;
 }
 #bottom-product-box{
@@ -175,7 +173,6 @@ h2{
    right: 42px;
     display: flex;
     width: 90%;
-    background-color: rgba(216, 191, 216, 0.089);
     justify-content:space-around;
 }
 .product{
@@ -212,7 +209,7 @@ h2{
         " dad "       
         "mom";
 }
-@media (min-width: 600px) {
+@media  (min-width: 600px) {
     #about-us-box{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto; 
@@ -231,11 +228,13 @@ h2{
     #product-box{
         width:45%;
         top:250px;
+        margin-left: 20px;
     }
     #bottom-product-box{
         width:45%;
         top:250px;
         left: 51%;
+        
     }
     #quote-button{
         width:170px;
@@ -248,20 +247,61 @@ h2{
         margin-left: -53px ;
     }
 }
-@media (max-width: 550px){
+@media (max-width: 600px){
+    body{
+        width: 95%;
+    }
     .side-header{
         visibility: hidden
     }
-}
-@media  screen and (max-width:600px) and (min-width:465px) {
+    body{
+        margin-right: -95px;
+    }
+    .icons:hover{
+        transform: scale(1.6);
+    }
     #product-box{
-        top: 250px;
+        position:absolute;
+        top: 280px;
+        width: 100%;
+       
     }
     #bottom-product-box{
-        top: 570px;
+        position:absolute;
+        top: 590px;
+        width: 100%;
     }
-
 }
+@media (max-width:330px){
+    body{
+      width:125%;
+    }
+    #product-box{
+        position:absolute;
+        width: 125%;
+    }
+    #bottom-product-box{
+        position:absolute;
+        width: 125%;
+    }   
+}
+@media (hover:hover){
+    #menu-icon:hover{
+        transform: scale(1.2);
+    }
+    #quote-button:hover{
+        font-size: 22px;
+        width: 170px;
+        height: 50px;
+    }
+    .icons:hover{
+        transform: scale(1.2);
+    }
+    #scroll-top:hover{
+        transform: scale(1.2);
+    }
+}
+
 #intro-para{
     display: block;
     text-align: center;
@@ -369,5 +409,5 @@ footer{
    margin-top: -30px
 }
 .icons:hover{
-    width:35px;
+    transform: scale(1.2);
 }
